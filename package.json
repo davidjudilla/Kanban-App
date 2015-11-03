@@ -1,0 +1,30 @@
+{
+  "name": "SmashTalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidjudilla/SmashTalk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidjudilla/SmashTalk/issues"
+  },
+  "homepage": "https://github.com/davidjudilla/SmashTalk#readme",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "react": "^0.13.3",
+    "redux": "^3.0.4"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^1.6.2",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
