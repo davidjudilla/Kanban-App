@@ -25,7 +25,9 @@
     "redux": "^3.0.4"
   },
   "devDependencies": {
+    "css-loader": "^0.18.0",
     "html-webpack-plugin": "^1.6.2",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
   }

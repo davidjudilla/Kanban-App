@@ -18,6 +18,15 @@ module.exports = {
 		inline: true,
 		progress: true
 	},
+	module: {
+		loaders: [
+			{
+				test: /\.css$/,
+				loaders: ['style', 'css'],
+				include: APP_PATH
+			}
+		]
+	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlwebpackPlugin({
