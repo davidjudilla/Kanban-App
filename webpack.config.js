@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 
 var ROOT_PATH = path.resolve(__dirname);
@@ -11,7 +12,14 @@ module.exports = {
 		path: BUILD_PATH,
 		filename: 'bundle.js'
 	},
+	devServer: {
+		historyApiFallback: true,
+		hot: true,
+		inline: true,
+		progress: true
+	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		new HtmlwebpackPlugin({
 			title: 'App'
 		})
