@@ -21,6 +21,7 @@
   "homepage": "https://github.com/davidjudilla/SmashTalk#readme",
   "dependencies": {
     "jquery": "^2.1.4",
+    "node-uuid": "^1.4.3",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-router": "^0.13.5",
@@ -31,6 +32,7 @@
     "babel-plugin-react-transform": "^1.1.1",
     "css-loader": "^0.18.0",
     "html-webpack-plugin": "^1.6.2",
+    "node-uuid": "^1.4.3",
     "react-transform-hmr": "^1.0.1",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.2",
