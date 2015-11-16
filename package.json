@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/davidjudilla/SmashTalk#readme",
   "dependencies": {
+    "array.prototype.findindex": "^1.0.0",
     "jquery": "^2.1.4",
     "node-uuid": "^1.4.3",
     "react": "^0.14.2",
