@@ -12,5 +12,5 @@ function main() {
 
 	document.body.appendChild(app);
 
-	ReactDOM.render(<App />, app);su
+	ReactDOM.render(<App />, app);
 }

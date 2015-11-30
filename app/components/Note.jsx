@@ -20,6 +20,8 @@ export default class Note extends React.Component {
 
 		return (
 			<div>
+				//if editing = true, render edit text field
+				//else render div span with delete 
 				{editing ? this.renderEdit() : this.renderTask()}
 			</div>
 		);
