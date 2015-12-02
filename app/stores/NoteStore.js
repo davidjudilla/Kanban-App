@@ -14,7 +14,7 @@ class NoteStore {
 		note.id = uuid.v4();
 
 		this.setState({
-			notes: notes.concat(note);
+			notes: notes.concat(note)
 		});
 	}
 	update({id, task}) {

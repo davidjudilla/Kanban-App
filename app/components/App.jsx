@@ -1,3 +1,4 @@
+import AltContainer from 'alt-container';
 import React from 'react';
 //uuid moved to NoteStore. We're moving all data manipulation to the stores
 //import uuid from 'node-uuid';
@@ -60,10 +61,16 @@ export default class App extends React.Component {
 		return (
 			<div> 
 				<button className="add-note" onClick={this.addNote}>+</button>
-				<Notes 
-					items={notes} 
-					onEdit={this.editNote}
-					onDelete={this.deleteNote} />
+				<AltContainer
+					stores={[NoteStore]}
+					inject={{
+						items: () => NoteStore.getState().notes
+					}}
+				>
+					<Notes 
+						onEdit={this.editNote}
+						onDelete={this.deleteNote} />
+				</AltContainer>
 			</div>
 		);
 	}
@@ -81,7 +88,7 @@ export default class App extends React.Component {
 	*/
 	}
 	editNote(id, task) { 
-		NoteActions.update({id, task}});
+		NoteActions.update({id, task});
 	/*
 		let notes = this.state.notes;
 		const noteIndex = this.findNote(id);

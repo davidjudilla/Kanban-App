@@ -18,10 +18,10 @@ export default class Note extends React.Component {
 	render() {
 		const editing = this.state.editing;
 
+		//if editing = true, render edit text field
+		//else render div span with delete 
 		return (
 			<div>
-				//if editing = true, render edit text field
-				//else render div span with delete 
 				{editing ? this.renderEdit() : this.renderTask()}
 			</div>
 		);

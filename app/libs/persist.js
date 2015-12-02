@@ -11,7 +11,7 @@ export default function(alt, storage, storeName) {
 	}
 
 	finalStore.listen(() => {
-		if(!storage.get('debug')) {
+		if(!storage.get('debug')) { 
 			storage.set(storeName, alt.takeSnapshot());
 		}
 	});

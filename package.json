@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/davidjudilla/SmashTalk.git"
   },
-  "keywords": [],
+  "keywords": [
+    "webpack",
+    "demo"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,20 +24,19 @@
   "homepage": "https://github.com/davidjudilla/SmashTalk#readme",
   "dependencies": {
     "alt": "^0.17.9",
+    "alt-container": "^1.0.0",
     "array.prototype.findindex": "^1.0.0",
     "jquery": "^2.1.4",
     "node-uuid": "^1.4.3",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
-    "react-router": "^0.13.5",
-    "redux": "^3.0.4"
+    "react-router": "^0.13.5"
   },
   "devDependencies": {
     "babel-loader": "^5.3.3",
     "babel-plugin-react-transform": "^1.1.1",
     "css-loader": "^0.18.0",
     "html-webpack-plugin": "^1.6.2",
-    "node-uuid": "^1.4.3",
     "react-transform-hmr": "^1.0.1",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.2",
